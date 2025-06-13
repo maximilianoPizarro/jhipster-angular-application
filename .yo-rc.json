@@ -2,8 +2,14 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "authenticationType": "jwt",
+    "backendType": "Quarkus",
     "baseName": "jhipsterAngularApplication",
-    "blueprints": [],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "3.4.0"
+      }
+    ],
     "buildTool": "maven",
     "cacheProvider": "no",
     "clientFramework": "angular",
@@ -15,12 +21,13 @@
     "enableHibernateCache": false,
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
-    "entities": [],
+    "entities": ["Region", "Country", "Location", "Department", "Task", "Employee", "Job", "JobHistory"],
     "gitCompany": "",
     "jhiPrefix": "jhi",
-    "jhipsterVersion": "8.1.0",
+    "jhipsterVersion": "8.8.0",
     "jwtSecretKey": "NDcyYjUxYzg2ODljOWNmOWRhNmQ2YTQ4MjVhZWJiMDYzMjcwNWI4NTljNjAwNDQyMjM2NjRkNDQ2ZDVlODg3ODQ2MTdjNDM2OGMzMzFkZmUwYTM3MjhiNmM2MjY0ODg5MTViNmJjYjM0NDdhYzMzOTFkYjRlMDRlNDhmNzlkYWI=",
     "languages": ["en"],
+    "lastLiquibaseTimestamp": 1739483224000,
     "messageBroker": false,
     "nativeLanguage": "en",
     "packageFolder": "com/angular/myapp",
